@@ -13,14 +13,12 @@ s = socket.socket()                         # Create a socket object
 host = socket.gethostname()                 # Get local machine name
 port = 12345                                # Reserve a port for your service.
 
-s.connect(('', port))
+s.connect(('', port))                       #Connecting to the port
 
 
-#msg = raw_input("Enter the send Message: ")
-#hash = raw_input("Enter the hash: ")
 l = " Msg : "+  msg + " \n hash :" + digest
 print 'Sending...'
-s.send(l)
+s.send(l)				    #Sening the message
 
 
 
